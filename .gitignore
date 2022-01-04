@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Michel.CQRS/Exemplo/LoginCommand.cs
+/Michel.CQRS/Exemplo/LoginHandler.cs
+/Michel.CQRS/Exemplo/LoginModel.cs
+/Michel.CQRS/Exemplo/LoginService.cs
