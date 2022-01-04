@@ -1,4 +1,4 @@
-﻿namespace CQRS.Implementacao
+﻿namespace CQRS.Implementation
 {
     public sealed class Notification
     {

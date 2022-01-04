@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace CQRS.Implementacao
+namespace CQRS.Implementation
 {
     public class HandlerBase
     {
@@ -10,7 +10,7 @@ namespace CQRS.Implementacao
         {
             if (command == null)
             {
-                return CommandResult.Fail("Parâmetro command é obrigatório");
+                return CommandResult.Fail("Command parameter can not be null");
             }
 
             command.Validate();

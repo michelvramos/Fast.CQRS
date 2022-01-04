@@ -7,13 +7,19 @@
     <Company>Michel Vaz Ramos</Company>
     <Authors>Michel Vaz Ramos</Authors>
     <Description>Easy to use implementation of Command Query Responsibility Segregation, aka CQRS.</Description>
-    <PackageReleaseNotes>Use at your own risk.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
+    <PackageReleaseNotes>Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the other systems which consumes it.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
     <Version>1.0.2</Version>
     <Product>Fast CQRS</Product>
     <PackageId>FastCQRS</PackageId>
     <PackageTags>CQRS, CSharp</PackageTags>
+    <RepositoryUrl>https://github.com/michelvramos/Fast.CQRS</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/michelvramos/Fast.CQRS</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>

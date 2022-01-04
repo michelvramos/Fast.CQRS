@@ -1,14 +1,14 @@
 ﻿using CQRS.Interfaces;
 
-namespace CQRS.Implementacao
+namespace CQRS.Implementation
 {
     /// <summary>
-    /// Recebe os parâmetros de entrada do comando e faz a validação
+    /// Abstract Command class. All commands must derive from this class.
     /// </summary>
     public abstract class Command : Notifiable, ICommand
     {
         /// <summary>
-        /// Valida os parâmetros de entrada
+        /// Performs validation on input paremeters.
         /// </summary>
         public abstract void Validate();
     }

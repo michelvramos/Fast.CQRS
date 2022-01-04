@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CQRS.Implementacao
+namespace CQRS.Implementation
 {
     public abstract class Notifiable : INotifiable
     {
@@ -15,14 +15,20 @@ namespace CQRS.Implementacao
         public void AddNotification(Notification notification)
         {
             if (notification != null)
+            {
                 _notifications.Add(notification);
+            }
         }
 
         public void AddNotifications(IEnumerable<Notification> notifications)
         {
             foreach (var notification in notifications)
+            {
                 if (notification != null)
+                {
                     _notifications.Add(notification);
+                }
+            }
         }
 
         public string NotificationsMessage() =>
