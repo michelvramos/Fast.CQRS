@@ -7,8 +7,18 @@ using System.Threading.Tasks;
 
 namespace CQRS.Implementation
 {
+    /// <summary>
+    /// Extension methods for Dependency Injection
+    /// </summary>
     public static class DependencyInjector
     {
+        /// <summary>
+        /// Inject dependecy from a list of dependencies.
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        /// <param name="dependencies"></param>
+        /// <returns></returns>
         public static Task InjectDependencies(this IServiceCollection services, IConfiguration configuration, IReadOnlyCollection<IInjector> dependencies)
         {
             _ = services == null ? throw new ArgumentNullException(nameof(services))

@@ -8,8 +8,8 @@
     <Authors>Michel Vaz Ramos</Authors>
     <Description>Easy to use implementation of Command Query Responsibility Segregation, aka CQRS.</Description>
     <PackageReleaseNotes>Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the other systems which consumes it.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <AssemblyVersion>1.0.3.1</AssemblyVersion>
+    <FileVersion>1.0.3.1</FileVersion>
     <Version>1.0.2</Version>
     <Product>Fast CQRS</Product>
     <PackageId>FastCQRS</PackageId>
