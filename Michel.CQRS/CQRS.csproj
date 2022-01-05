@@ -8,9 +8,9 @@
     <Authors>Michel Vaz Ramos</Authors>
     <Description>Easy to use implementation of Command Query Responsibility Segregation, aka CQRS.</Description>
     <PackageReleaseNotes>Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the systems which consumes it.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.3.2</AssemblyVersion>
-    <FileVersion>1.0.3.2</FileVersion>
-    <Version>1.0.3</Version>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
+    <Version>1.0.4</Version>
     <Product>Fast CQRS</Product>
     <PackageId>FastCQRS</PackageId>
     <PackageTags>CQRS CSharp DDD</PackageTags>
@@ -20,12 +20,14 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <NeutralLanguage>en</NeutralLanguage>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Exemplo\**" />
     <EmbeddedResource Remove="Exemplo\**" />
     <None Remove="Exemplo\**" />
+	  <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
