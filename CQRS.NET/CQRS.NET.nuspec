@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>FastCQRS.Net</id>
+    <version>1.0.3</version>
+    <title>$title$</title>
+    <authors>Michel Vaz Ramos</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/michelvramos/Fast.CQRS</projectUrl>
+    <description>Easy to use .net framework implementation of Command Query Responsibility Segregation, aka CQRS.</description>
+    <releaseNotes>Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the systems which consumes it.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>CQRS CSharp Command Query Responsibility Segregation</tags>
+    <repository type="git" url="https://github.com/michelvramos/Fast.CQRS" />
+  </metadata>
+</package>
