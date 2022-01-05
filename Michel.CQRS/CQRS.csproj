@@ -13,10 +13,10 @@
     <Version>1.0.3</Version>
     <Product>Fast CQRS</Product>
     <PackageId>FastCQRS</PackageId>
-    <PackageTags>CQRS, CSharp, DDD</PackageTags>
+    <PackageTags>CQRS CSharp DDD</PackageTags>
     <RepositoryUrl>https://github.com/michelvramos/Fast.CQRS</RepositoryUrl>
     <PackageProjectUrl>https://github.com/michelvramos/Fast.CQRS</PackageProjectUrl>
-    <RepositoryType>git</RepositoryType>
+    <RepositoryType>GIT</RepositoryType>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <NeutralLanguage>en</NeutralLanguage>
