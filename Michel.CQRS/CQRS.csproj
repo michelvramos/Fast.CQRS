@@ -7,10 +7,15 @@
     <Company>Michel Vaz Ramos</Company>
     <Authors>Michel Vaz Ramos</Authors>
     <Description>Easy to use implementation of Command Query Responsibility Segregation, aka CQRS.</Description>
-    <PackageReleaseNotes>Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the systems which consumes it.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.4.0</AssemblyVersion>
-    <FileVersion>1.0.4.0</FileVersion>
-    <Version>1.0.4</Version>
+    <PackageReleaseNotes>1.0.8.0
+- Removed Dependency Injector.
+- Added AddNotification(string, string) overload
+- Return of InnerException in HandlerBase.Handle, if any.
+
+Feel free to enjoy this simple but powerful CQRS implementation. You will be able to disconnect your core application from the systems which consumes it.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.8.0</AssemblyVersion>
+    <FileVersion>1.0.8.0</FileVersion>
+    <Version>1.0.8</Version>
     <Product>Fast CQRS</Product>
     <PackageId>FastCQRS</PackageId>
     <PackageTags>CQRS CSharp DDD</PackageTags>

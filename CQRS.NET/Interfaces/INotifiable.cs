@@ -24,6 +24,11 @@ namespace CQRS.Interfaces
         void AddNotification(Notification notification);
 
         /// <summary>
+        /// <inheritdoc cref="Implementation.Notifiable.AddNotification(string, string)"/>
+        /// </summary>
+        void AddNotification(string property, string message);
+
+        /// <summary>
         /// <inheritdoc cref="Implementation.Notifiable.AddNotifications(IEnumerable{Notification})"/>
         /// </summary>
         void AddNotifications(IEnumerable<Notification> notifications);

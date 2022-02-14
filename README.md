@@ -91,3 +91,10 @@ That's all.
 
 I hope you enjoy it! Feel free to ask any questions or suggest any improvements.
 
+# Release Notes
+
+## 1.0.8.1
+- Removed Dependency Injector.
+- Added Notifiable.AddNotification(string, string) overload
+- HandlerBase.Handle() will return the InnerException, if there are any.
+

@@ -37,11 +37,23 @@ namespace CQRS.Implementation
 
             try
             {
-                return CommandResult.Success("", await func());
+                return CommandResult.Ok("", await func());
             }
             catch (Exception ex)
             {
-                return CommandResult.Fail(ex.Message);
+                if (ex.InnerException == null)
+                {
+                    return CommandResult.Fail(ex.Message);
+                }
+
+                Exception inner = ex;
+
+                while(inner.InnerException != null)
+                {
+                    inner = inner.InnerException;
+                }
+
+                return CommandResult.Fail(inner.Message);
             }
         }
     }

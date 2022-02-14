@@ -10,7 +10,7 @@ namespace CQRS.Implementation
         /// <summary>
         /// True if command was succeed, otherwise false.
         /// </summary>
-        public bool Sucess { get; set; }
+        public bool Success { get; set; }
         /// <summary>
         /// A simple self explanatory message, if required.
         /// </summary>
@@ -25,12 +25,12 @@ namespace CQRS.Implementation
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="sucess"><inheritdoc cref="Sucess"/></param>
+        /// <param name="sucess"><inheritdoc cref="Success"/></param>
         /// <param name="message"><inheritdoc cref="Message"/></param>
         /// <param name="data"><inheritdoc cref="Data"/></param>
         public CommandResult(bool sucess, string message, object data = null)
         {
-            Sucess = sucess;
+            Success = sucess;
             Message = message;
             Data = data;
         }
@@ -41,7 +41,7 @@ namespace CQRS.Implementation
         /// <param name="message"><inheritdoc cref="Message"/> </param>
         /// <param name="data"><inheritdoc cref="Data"/></param>
         /// <returns>A CommandResult instance with <c>Success = true</c>, a message and custom data.</returns>
-        public static CommandResult Success(string message = "", object data = null)
+        public static CommandResult Ok(string message = "", object data = null)
         {
             return new CommandResult(true, message, data);
         }

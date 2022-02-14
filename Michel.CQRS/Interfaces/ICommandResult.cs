@@ -6,9 +6,9 @@
     public interface ICommandResult
     {
         /// <summary>
-        /// <inheritdoc cref="Implementation.CommandResult.Sucess"/>
+        /// <inheritdoc cref="Implementation.CommandResult.Success"/>
         /// </summary>
-        bool Sucess { get; set; }
+        bool Success { get; set; }
         /// <summary>
         /// <inheritdoc cref="Implementation.CommandResult.Message"/>
         /// </summary>

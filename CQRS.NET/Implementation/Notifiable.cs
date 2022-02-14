@@ -36,6 +36,16 @@ namespace CQRS.Implementation
         }
 
         /// <summary>
+        /// Adds a notification. Use <c>nameof</c> operator to get the property name.
+        /// </summary>
+        /// <param name="property">Name of the property which is invalid</param>
+        /// <param name="message">Message</param>
+        public void AddNotification(string property, string message)
+        {
+            _notifications.Add(new Notification(property, message));
+        }
+
+        /// <summary>
         /// Adds a list of notifications.
         /// </summary>
         /// <param name="notifications">A list of notifications.</param>
@@ -55,6 +65,6 @@ namespace CQRS.Implementation
         /// </summary>
         /// <returns></returns>
         public string NotificationsMessage() =>
-            string.Join(";", Notifications.Select(x => x.Message));
+            string.Join(";", Notifications.Select(x => string.Concat(x.Property, "=", x.Message)));
     }
 }
