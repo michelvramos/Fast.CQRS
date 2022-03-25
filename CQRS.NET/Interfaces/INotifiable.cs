@@ -1,5 +1,5 @@
-﻿using CQRS.Implementation;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CQRS.Implementation;
 
 namespace CQRS.Interfaces
 {

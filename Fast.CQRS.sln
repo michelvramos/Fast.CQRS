@@ -5,7 +5,14 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS", "Michel.CQRS\CQRS.csproj", "{3BDAAA15-FCCB-4E72-A638-8CCAA79A9AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.NET", "CQRS.NET\CQRS.NET.csproj", "{AD62211D-779B-4274-966E-9509B71D6EF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRS.NET", "CQRS.NET\CQRS.NET.csproj", "{AD62211D-779B-4274-966E-9509B71D6EF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{45F07F82-4CF8-4AA4-89DD-F7E91F7E6A3F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{28BBC90B-1134-414A-A3A0-71E9C645A0D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{AD62211D-779B-4274-966E-9509B71D6EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD62211D-779B-4274-966E-9509B71D6EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD62211D-779B-4274-966E-9509B71D6EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BBC90B-1134-414A-A3A0-71E9C645A0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BBC90B-1134-414A-A3A0-71E9C645A0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BBC90B-1134-414A-A3A0-71E9C645A0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BBC90B-1134-414A-A3A0-71E9C645A0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

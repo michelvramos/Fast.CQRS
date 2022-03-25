@@ -24,6 +24,5 @@
             Property = property;
             Message = message;
         }
-
     }
 }

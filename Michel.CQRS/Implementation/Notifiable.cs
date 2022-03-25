@@ -1,8 +1,8 @@
-﻿using CQRS.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using CQRSCore.Interfaces;
 
-namespace CQRS.Implementation
+namespace CQRSCore.Implementation
 {
     /// <summary>
     /// Use this class to notify errors about a command.
@@ -16,7 +16,6 @@ namespace CQRS.Implementation
         /// Error notifications, if any.
         /// </summary>
         public IReadOnlyCollection<Notification> Notifications { get => _notifications.ToArray(); }
-
 
         /// <summary>
         /// True if the object is valid, i.e., contains no notifications.

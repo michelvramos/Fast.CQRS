@@ -1,6 +1,6 @@
-﻿using CQRS.Interfaces;
+﻿using CQRSCore.Interfaces;
 
-namespace CQRS.Implementation
+namespace CQRSCore.Implementation
 {
     /// <summary>
     /// Rapresents the result of a command.

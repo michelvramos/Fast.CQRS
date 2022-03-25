@@ -1,4 +1,4 @@
-﻿namespace CQRS.Interfaces
+﻿namespace CQRSCore.Interfaces
 {
     /// <summary>
     /// Interface of an command result.

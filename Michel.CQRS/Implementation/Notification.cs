@@ -1,4 +1,4 @@
-﻿namespace CQRS.Implementation
+﻿namespace CQRSCore.Implementation
 {
     /// <summary>
     /// A class to indicated invalid data in a command paramenter.
@@ -24,6 +24,5 @@
             Property = property;
             Message = message;
         }
-
     }
 }

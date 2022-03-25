@@ -1,7 +1,7 @@
-﻿using CQRS.Implementation;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CQRSCore.Implementation;
 
-namespace CQRS.Interfaces
+namespace CQRSCore.Interfaces
 {
     /// <summary>
     /// Interface of an notifiable object

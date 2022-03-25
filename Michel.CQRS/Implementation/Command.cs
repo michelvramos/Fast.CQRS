@@ -1,6 +1,6 @@
-﻿using CQRS.Interfaces;
+﻿using CQRSCore.Interfaces;
 
-namespace CQRS.Implementation
+namespace CQRSCore.Implementation
 {
     /// <summary>
     /// Abstract Command class. All commands must derive from this class.

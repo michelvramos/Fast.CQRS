@@ -1,4 +1,7 @@
-﻿using System.Threading;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CQRSCore.Interfaces
@@ -7,7 +10,7 @@ namespace CQRSCore.Interfaces
     /// Interface for a command handler.
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public interface IHandler<T> where T : ICommand
+    public interface IHandlerAsync<T> where T : ICommand
     {
         /// <summary>
         /// Handle a command of type <typeparamref name="T"/>.
@@ -15,6 +18,6 @@ namespace CQRSCore.Interfaces
         /// <param name="command">A command to execute</param>
         /// <param name="cancellationToken">Cancellation token</param>
         /// <returns></returns>
-        ICommandResult Handle(T command, CancellationToken cancellationToken);
+        Task<ICommandResult> HandleAsync(T command, CancellationToken cancellationToken);
     }
 }

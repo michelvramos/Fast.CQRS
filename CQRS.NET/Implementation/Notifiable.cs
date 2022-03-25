@@ -1,6 +1,6 @@
-﻿using CQRS.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using CQRS.Interfaces;
 
 namespace CQRS.Implementation
 {
@@ -16,7 +16,6 @@ namespace CQRS.Implementation
         /// Error notifications, if any.
         /// </summary>
         public IReadOnlyCollection<Notification> Notifications { get => _notifications.ToArray(); }
-
 
         /// <summary>
         /// True if the object is valid, i.e., contains no notifications.
