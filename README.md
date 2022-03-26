@@ -1,5 +1,5 @@
 # What is FastCQRS?
-FastCQRS is a lightweight and easy to use support class and interfaces for implementing [CQRS (Command Query Responsibility Segregation)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_separation).
+FastCQRS is a lightweight and easy to use support classes and interfaces for implementing [CQRS (Command Query Responsibility Segregation)](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_separation).
 # How do I use it?
 Let's create a simple login use case where there is a LoginService and a LoginModel class. The LoginService class will receive an username and password, performs any work necessary and return true if username and password is valid, otherwise, false. The LoginModel is just a simple class to hold the data of the user trying to log in.
 
