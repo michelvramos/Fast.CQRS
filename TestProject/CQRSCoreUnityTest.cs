@@ -26,25 +26,30 @@ namespace TestProject
         public void TestHandler()
         {
             ICommandResult ret = handler.Handle(new TestHandleCommand { Name = "John Doo", Age = 42 }, cancellationToken);
+            Assert.IsNotNull(ret, "Ret is null");
             Assert.IsTrue(ret.Success, "Command not successfull");
             Assert.IsInstanceOfType(ret.Data, typeof(bool), "Expected type mismatch");
             Assert.IsTrue((bool)ret.Data == true, "data missmatch");
         }
 
         [TestMethod]
-        public async Task TestHandlerIO()
+        [DataRow("https://www.microsoft.com")]
+        [DataRow("https://www.google.com")]
+        [DataRow("https://www.terra.com.br")]
+        public async Task TestHandlerIO(string url)
         {
-            ICommandResult ret = await handler.HandleAsync(new TestAsyncIOCommand { Url = "https://www.microsoft.com" }, cancellationToken);
+            ICommandResult ret = await handler.HandleAsync(new TestAsyncIOCommand { Url = url}, cancellationToken);
+            Assert.IsNotNull(ret, "Ret is null");
             Assert.IsTrue(ret.Success, "Command not successfull");
             Assert.IsInstanceOfType(ret.Data, typeof(string), "Expected type mismatch");
-            Assert.IsTrue(ret.Data.ToString().Contains("!DOCTYPE"), "data missmatch");
-            context.WriteLine(ret.Data.ToString());
+            Assert.IsTrue(ret.Data.ToString().Contains("!DOCTYPE", System.StringComparison.InvariantCultureIgnoreCase), "data missmatch");
         }
 
         [TestMethod]
         public async Task TestHandlerCPU()
         {
             ICommandResult ret = await handler.HandleAsync(new TestAsyncCpuCommand { MaxPrime = 10000000 }, cancellationToken);
+            Assert.IsNotNull(ret,"Ret is null");
             Assert.IsTrue(ret.Success, "Command not successfull");
             Assert.IsInstanceOfType(ret.Data, typeof(int), "Expected type mismatch");
             Assert.IsTrue((int)ret.Data == 664579, "data missmatch");
